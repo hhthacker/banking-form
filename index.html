@@ -1,0 +1,91 @@
+
+Build a form that accepts a loan application. It must have the following fields.
+
+Applicant first name
+Applicant middle initial
+Applicant last name
+Applicant address
+Applicant occupation
+Applicant employer
+Employer address
+
+Type of loan select element with these options:
+Commercial
+Real estate
+Personal
+Mortgage
+Requested amount of loan
+
+Radio button elements for loan length
+5 years
+15 years
+30 years
+
+Checkbox group for special conditions
+I have a down payment
+Out-of-state resident
+Married
+Loan will be co-signed
+
+A text area to allow for additional comments
+Applicant email address
+Applicant telephone number
+Applicant LinkedIn URL
+
+<form>
+	<fieldset>
+		<legend>Personal Info</legend>
+		<label for=""></label>
+		<input type="" name="" value="">
+		<label for=""></label>
+		<input type="" name="" value="">
+		<label for=""></label>
+		<input type="" name="" value="">
+		<label for=""></label>
+		<input type="" name="" value="">
+		<label for=""></label>
+		<input type="" name="" value="">
+		<label for=""></label>
+		<input type="" name="" value="">
+		<label for=""></label>
+		<input type="" name="" value="">
+
+	</fieldset>
+
+	<fieldset>
+		<legend>Loan Type</legend>
+		<label for="type">Loan Type</label>
+			<select name="type">
+				<option value="">Commercial</option>
+				<option value="">Real Estate</option>
+				<option value="">Personal</option>
+				<option value="">Mortgage</option>
+				<option value="">Requested amount of loan</option>
+			</select>
+
+		<h1>Length</h1>
+		<input type="radio" name="" value="" placeholder="">5 Years<br>
+		<input type="radio" name="" value="" placeholder="">15 Years<br>
+		<input type="radio" name="" value="" placeholder="">30 Years<br>
+
+		<h1>Special Conditions</h1>
+		<label for=""></label>
+		<input type="checkbox" name="" value="">
+		<label for=""></label>
+		<input type="checkbox" name="" value="">
+		<label for=""></label>
+		<input type="checkbox" name="" value="">
+		<label for=""></label>
+		<input type="checkbox" name="" value="">
+
+	</fieldset>
+
+	<fieldset>
+		<label for="comments">Comments</label>
+			<textarea name="comments"></textarea>
+			<input type="email" name="">
+			<input type="tel" name="">
+			<input type="url" name="">
+	</fieldset>
+		<button type="submit">Submit</button>
+</form>
