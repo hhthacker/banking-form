@@ -1,11 +1,11 @@
-form {
 
-	> input[type="text"] {
 
-		&:valid {
-			background: green;
-		}
-	}
+:required {
+	background: crimson;
+}
+
+:valid {
+	background: chartreuse;
 }
 
 .personal {
@@ -13,6 +13,10 @@ form {
 }
 
 body {
-	padding-right: 300px;
-	padding-left: 150px;
+	padding:100px;
+	align: center;
+}
+
+form {
+	box-shadow: 3px;
 }
