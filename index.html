@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Baking Loan Form</title>
-	<link rel="stylesheet" media="screen" href="validation.css">
-</head>
+	<head>
+		<meta charset="utf-8">
+		<title>Baking Loan Form</title>
+		<link rel="stylesheet" media="screen" href="validation.css">
+	</head>
 <body>
 	<form class="loan" name="loan">
-		<fieldset>
+		<fieldset class="personal">
 			<legend><strong>Personal Information</strong></legend>
 			<ul>
 				<li>
 					<label for="name">First Name:</label>
-					<input type="text" name="name" value=""><br>
+					<input required type="text" name="name" value=""><br>
 				</li>
 				<li>
 					<label for="name">Middle Initial:</label>
@@ -49,21 +49,21 @@
 				<li>
 					<label for="type">Loan Type:</label>
 						<select name="type">
-							<option value="">Commercial</option>
-							<option value="">Real Estate</option>
-							<option value="">Personal</option>
-							<option value="">Mortgage</option>
+							<option value="commercial">Commercial</option>
+							<option value="realestate">Real Estate</option>
+							<option value="personal">Personal</option>
+							<option value="mortgage">Mortgage</option>
 						</select><br><br>
 				</li>
 				<li>
 					<label for="amount">Requested Loan Amount:</label>
-					<input type="text" name="amount" value=""><br>
+					<input type="number" name="amount" value=""><br>
 				</li>
 				<li>
 					<h5>Loan Length</h5>
-					<input type="radio" name="length" value="" placeholder="">5 Years<br>
-					<input type="radio" name="length" value="" placeholder="">15 Years<br>
-					<input type="radio" name="length" value="" placeholder="">30 Years<br>
+					<input type="radio" name="length" value="5" placeholder="">5 Years<br>
+					<input type="radio" name="length" value="15" placeholder="">15 Years<br>
+					<input type="radio" name="length" value="30" placeholder="">30 Years<br>
 				</li>
 				<li>
 					<h5>Special Conditions</h5>
