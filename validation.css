@@ -1,0 +1,21 @@
+input:valid {
+	background: chartreuse;
+}
+
+input:required:invalid {
+	background: crimson;
+}
+
+.personal {
+	line-height: 2em;
+}
+
+body {
+	padding:100px;
+	align: center;
+	border: solid 3em;
+}
+
+form {
+	box-shadow: 3px;
+}

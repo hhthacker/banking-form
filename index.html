@@ -1,66 +1,103 @@
 <!DOCTYPE html>
-<head></head>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Baking Loan Form</title>
+		<link rel="stylesheet" media="screen" href="validation.css">
+	</head>
 <body>
+	<form class="loan" name="loan">
+		<fieldset class="personal">
+			<legend><strong>Personal Information</strong></legend>
+			<ul>
+				<li>
+					<label for="name">First Name:</label>
+					<input required type="text" name="name" value=""><br>
+				</li>
+				<li>
+					<label for="name">Middle Initial:</label>
+					<input required type="text" name="name" value=""><br>
+				</li>
+				<li>
+					<label for="name">Last Name:</label>
+					<input required type="text" name="name" value=""><br>
+				</li>
+				<li>
+					<label for="address">Applicant Address:</label>
+					<input required type="text" name="address" value="">
+					<input required type="text" name="address" value=""><br>
+				</li>
+				<li>
+					<label for="occupation">Applicant Occupation:</label>
+					<input required type="text" name="occupation" value=""><br>
+				</li>
+				<li>
+					<label for="employer">Applicant Employer:</label>
+					<input required type="text" name="" value=""><br>
+				</li>
+				<li>
+					<label for="address">Employer Address:</label>
+					<input required type="text" name="address" value="">
+					<input required type="text" name="address" value=""><br>
+				</li>
+			</ul>
+		</fieldset>
 
-<form>
-	<fieldset>
-		<legend><strong>Personal Info</strong></legend>
-		<label for="name">First Name:</label>
-		<input type="text" name="name" value=""><br>
-		<label for="name">Middle Initial:</label>
-		<input type="text" name="name" value=""><br>
-		<label for="name">Last Name:</label>
-		<input type="text" name="name" value=""><br>
-		<label for="address">Applicant Address:</label>
-		<input type="text" name="address" value=""><br>
-		<input type="text" name="address" value=""><br>
-		<label for="occupation">Applicant Occupation:</label>
-		<input type="text" name="occupation" value=""><br>
-		<label for="employer">Applicant Employer:</label>
-		<input type="text" name="" value=""><br>
-		<label for="address">Employer Address:</label>
-		<input type="text" name="address" value=""><br>
-		<input type="text" name="address" value=""><br>
+		<fieldset>
+			<legend><strong>Loan Type</strong></legend>
+			<ul>
+				<li>
+					<label for="type">Loan Type:</label>
+						<select name="type">
+							<option value="commercial">Commercial</option>
+							<option value="realestate">Real Estate</option>
+							<option value="personal">Personal</option>
+							<option value="mortgage">Mortgage</option>
+						</select><br><br>
+				</li>
+				<li>
+					<label for="amount">Requested Loan Amount:</label>
+					<input required type="number" name="amount" value="$"><br>
+				</li>
+				<li>
+					<h5>Loan Length</h5>
+					<input type="radio" name="length" value="5" placeholder="">5 Years<br>
+					<input type="radio" name="length" value="15" placeholder="">15 Years<br>
+					<input type="radio" name="length" value="30" placeholder="">30 Years<br>
+				</li>
+				<li>
+					<h5>Special Conditions</h5>
+					<input type="checkbox" name="conditions" value="">
+					<label for="">I have a down payment</label><br>
+					<input type="checkbox" name="conditions" value="">
+					<label for="">Out-of-state resident</label><br>
+					<input type="checkbox" name="conditions" value="">
+					<label for="">Married</label><br>
+					<input type="checkbox" name="conditions" value="">
+					<label for="">Loan will be co-signed</label><br>
+				</li>
+			</ul>
+		</fieldset>
 
-	</fieldset>
-
-	<fieldset>
-		<legend><strong>Loan Type</strong></legend>
-		<label for="type">Loan Type:</label>
-			<select name="type">
-				<option value="">Commercial</option>
-				<option value="">Real Estate</option>
-				<option value="">Personal</option>
-				<option value="">Mortgage</option>
-			</select><br>
-		<label for="amount">Requested Loan Amount:</label>
-		<input type="text" name="amount" value=""><br>
-
-		<h5>Loan Length</h5>
-		<input type="radio" name="length" value="" placeholder="">5 Years<br>
-		<input type="radio" name="length" value="" placeholder="">15 Years<br>
-		<input type="radio" name="length" value="" placeholder="">30 Years<br>
-
-		<h5>Special Conditions</h5>
-		<input type="checkbox" name="conditions" value="">
-		<label for="">I have a down payment</label><br>
-		<input type="checkbox" name="conditions" value="">
-		<label for="">Out-of-state resident</label><br>
-		<input type="checkbox" name="conditions" value="">
-		<label for="">Married</label><br>
-		<input type="checkbox" name="conditions" value="">
-		<label for="">Loan will be co-signed</label><br>
-
-	</fieldset>
-
-	<fieldset>
-		<label for="comments">Comments:</label><br>
-			<textarea name="comments"></textarea><br>
-			Email Address:<input type="email" name=""><br>
-			Telephone Number:<input type="tel" name=""><br>
-			LinkedIn URL:<input type="url" name=""><br>
-	</fieldset>
+		<fieldset>
+			<legend><strong>Additional Information</strong></legend>
+			<ul>
+				<li>
+					<label for="comments">Comments:</label><br>
+					<textarea name="comments"></textarea><br>
+				</li>
+				<li>
+					Email Address:<input required type="email" id="email" name=""><br>
+				</li>
+				<li>
+					Telephone Number:<input required type="tel" name=""><br>
+				</li>
+				<li>
+					LinkedIn URL:<input required type="url" id="url" name=""><br>
+				</li>
+			</ul>
+		</fieldset>
 		<button type="submit">Submit</button>
-</form>
-
+	</form>
 </body>
+</html>
