@@ -11,3 +11,8 @@ form {
 .personal {
 	line-height: 2em;
 }
+
+body {
+	padding-right: 300px;
+	padding-left: 150px;
+}
