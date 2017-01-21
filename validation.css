@@ -1,0 +1,13 @@
+form {
+
+	> input[type="text"] {
+
+		&:valid {
+			background: green;
+		}
+	}
+}
+
+.personal {
+	line-height: 2em;
+}
