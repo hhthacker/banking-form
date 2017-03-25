@@ -46,7 +46,7 @@ Demonstrates basic form and input field validation understanding.
 ### How to run:
 ```
 git clone https://github.com/hhthacker/banking-form.git
-cd alpha-stacker
+cd banking-form
 npm install http-server -g
 http-server -p 8080
 ```
